@@ -1,0 +1,44 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Local environments and editor state
+.env
+.env.*
+.vscode/
+.idea/
+
+# Python/runtime caches
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated runtime files
+session_audit.csv
+live_window.parquet
+extraction_log.txt
+harvester_v2.log
+*.log
+
+# Large or historical workspace artifacts
+archive/
+backup_before_refactor/
+evaluation/
+workspace_inventory.md
+archive_manifest.md
+rollback.md
+
+# Raw/private telemetry data
+yashas_data/
+imposters/
+owner_train_dataset.parquet
+master_feature_dataset.parquet
+
+# Keep runnable demo fixtures and model artifacts tracked.
+!experiment/
+!experiment/*.parquet
+!checkpoints/
+!checkpoints/best_model.pth
+!checkpoints/scaler.pkl
